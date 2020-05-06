@@ -1,0 +1,427 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.CartFragment">
+
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical">
+
+                <RelativeLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:background="@color/light_grey">
+
+                    <com.ideologer.zamishoapp.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_centerVertical="true"
+                        android:layout_marginLeft="10dp"
+                        android:layout_marginTop="10dp"
+                        android:layout_marginBottom="10dp"
+                        android:text="Product Total Price"
+                        android:textColor="@color/colorPrimary"
+                        android:textSize="14dp"
+                        app:custom_font="Montserrat-Bold.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                    <com.ideologer.zamishoapp.utils.CustomTextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_alignParentRight="true"
+                        android:layout_centerVertical="true"
+                        android:layout_marginRight="10dp"
+                        android:text="Rs.70"
+                        android:textColor="@color/black_color"
+                        android:textSize="14dp"
+                        app:custom_font="Montserrat-SemiBold.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                </RelativeLayout>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    card_view:cardBackgroundColor="@color/colorAccent"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_margin="10dp"
+                            android:orientation="horizontal"
+
+                            >
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_toRightOf="@+id/ivCash"
+                                android:text="Add Your Marging here"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                android:textStyle="bold"
+                                app:custom_font="Montserrat-SemiBold.otf">
+
+                            </com.ideologer.zamishoapp.utils.CustomTextView>
+
+                            <EditText
+                                android:id="@+id/etMargin"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_gravity="center_horizontal"
+                                android:layout_marginRight="10dp"
+                                android:backgroundTint="@color/colorPrimary"
+                                android:hint="Margin"
+                                android:inputType="number"
+                                android:maxLines="1"
+                                android:paddingRight="15dp"
+                                android:textColor="@color/black_color"
+                                android:textCursorDrawable="@drawable/curser_color"></EditText>
+                        </RelativeLayout>
+
+                        <com.ideologer.zamishoapp.utils.CustomTextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_centerVertical="true"
+                            android:layout_marginLeft="10dp"
+                            android:layout_toRightOf="@+id/ivCash"
+                            android:text="@string/margin_text"
+                            android:textColor="@color/whats_color"
+                            android:textSize="14dp"
+                            android:textStyle="bold"
+                            app:custom_font="Montserrat-Regular.otf">
+
+                        </com.ideologer.zamishoapp.utils.CustomTextView>
+                    </LinearLayout>
+
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    card_view:cardBackgroundColor="@color/colorAccent"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="Your Margin"
+                                android:textColor="@color/whats_color"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Medium.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:text="Rs.750"
+                                android:textColor="@color/whats_color"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Regular.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="Total Collect from Customer"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Medium.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:text="Rs.70"
+                                android:textColor="@color/black_color"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Regular.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    card_view:cardBackgroundColor="@color/colorAccent"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="Product Charges"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Medium.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:text="Rs.750"
+                                android:textColor="@color/black_color"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Regular.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="Delivery Charges"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Medium.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:text="Rs.70"
+                                android:textColor="@color/black_color"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Regular.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp">
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentTop="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="0dp"
+                                android:text="COD Charges"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Medium.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:text="Rs.10"
+                                android:textColor="@color/black_color"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Regular.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="15dp"
+                            android:background="@color/light_grey">
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:layout_marginTop="10dp"
+                                android:layout_marginBottom="10dp"
+                                android:text="Delivery Charges"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Bold.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:text="Rs.70"
+                                android:textColor="@color/black_color"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-SemiBold.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                        </RelativeLayout>
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.cardview.widget.CardView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:visibility="visible"
+                    card_view:cardBackgroundColor="@color/colorAccent"
+                    card_view:cardElevation="1dp"
+                    card_view:cardUseCompatPadding="true">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginBottom="5dp">
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="Supplier"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Medium.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:text="Ahmad Fabric Fashion"
+                                android:textColor="@color/black_color"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Regular.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="5dp"
+                            android:layout_marginBottom="10dp">
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="Payment"
+                                android:textColor="@color/colorPrimary"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Medium.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                            <com.ideologer.zamishoapp.utils.CustomTextView
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentRight="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginRight="10dp"
+                                android:text="Cash On Delivery"
+                                android:textColor="@color/black_color"
+                                android:textSize="14dp"
+                                app:custom_font="Montserrat-Regular.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                        </RelativeLayout>
+
+                    </LinearLayout>
+                </androidx.cardview.widget.CardView>
+
+                <androidx.recyclerview.widget.RecyclerView
+                    android:id="@+id/rvCart"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="60dp">
+
+                </androidx.recyclerview.widget.RecyclerView>
+            </LinearLayout>
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnDone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_home"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="10dp"
+        android:text="Done"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp"></Button>
+
+</RelativeLayout>

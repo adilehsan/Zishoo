@@ -1,0 +1,176 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.core.widget.NestedScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".ui.fragments.MyProfileFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+
+        <de.hdodenhof.circleimageview.CircleImageView xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:src="@drawable/bg_image"
+            app:civ_border_color="@color/colorAccent"
+            app:civ_border_width="2dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginRight="20dp"
+            android:orientation="vertical">
+
+            <EditText
+                android:id="@+id/etUserName"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Enter your name"
+                android:backgroundTint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/curser_color"
+                android:maxLines="1"
+                android:paddingLeft="10dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/etUserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Enter your email"
+                android:maxLines="1"
+                android:backgroundTint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/curser_color"
+                android:paddingLeft="10dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/etUserAddress"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:hint="Enter your address"
+                android:maxLines="2"
+                android:backgroundTint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/curser_color"
+                android:paddingLeft="10dp">
+
+            </EditText>
+
+            <EditText
+                android:id="@+id/etPostalCode"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:layout_marginTop="15dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/curser_color"
+                android:hint="Enter your postal code"
+                android:maxLines="1"
+                android:paddingLeft="10dp">
+
+            </EditText>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/etUserGender"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_weight="1"
+
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_action_down"
+                    android:focusable="false"
+                    android:hint="Select Gender"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp">
+
+                </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+                <EditText
+                    android:id="@+id/etUserDOB"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:textCursorDrawable="@drawable/curser_color"
+                    android:hint="Date Of Birth"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp">
+
+                </EditText>
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="15dp"
+                android:orientation="horizontal"
+                android:weightSum="2">
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/etUserCity"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:focusable="false"
+                    android:clickable="true"
+                    android:layout_weight="1"
+                    android:drawableRight="@drawable/ic_action_down"
+                    android:hint="Select city"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp">
+
+                </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+                <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                    android:id="@+id/etUserProvince"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="10dp"
+                    android:layout_weight="1"
+                    android:clickable="true"
+                    android:drawableRight="@drawable/ic_action_down"
+                    android:focusable="false"
+                    android:hint="Select Province"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp">
+
+                </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/btnUpdate"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginTop="40dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/rounded_btn"
+                android:paddingLeft="50dp"
+                android:paddingTop="10dp"
+                android:paddingRight="50dp"
+                android:paddingBottom="10dp"
+                android:text="Next"
+                android:textColor="@color/colorAccent"
+                android:textSize="14sp"></Button>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.core.widget.NestedScrollView>

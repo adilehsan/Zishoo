@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_home_graph"
+    app:startDestination="@id/forYouFragment">
+
+    <fragment
+        android:id="@+id/forYouFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.ForYouFragment"
+        android:label="fragment_for_you"
+        tools:layout="@layout/fragment_for_you" >
+        <action
+            android:id="@+id/action_forYouFragment_to_productListFragment"
+            app:destination="@id/productListFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/collectionsFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.CollectionsFragment"
+        android:label="fragment_collections"
+        tools:layout="@layout/fragment_collections" />
+    <fragment
+        android:id="@+id/ordersFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.OrdersFragment"
+        android:label="fragment_orders"
+        tools:layout="@layout/fragment_orders" />
+    <fragment
+        android:id="@+id/myAccountFragment2"
+        android:name="com.ideologer.zamishoapp.ui.fragments.MyAccountFragment"
+        android:label="fragment_my_account"
+        tools:layout="@layout/fragment_my_account" >
+        <action
+            android:id="@+id/action_myAccountFragment2_to_myProfileFragment"
+            app:destination="@id/myProfileFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment2_to_sharedCatalogFragment"
+            app:destination="@id/sharedCatalogFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment2_to_paymentHistoryFragment"
+            app:destination="@id/paymentHistoryFragment" />
+        <action
+            android:id="@+id/action_myAccountFragment2_to_bankAccountFragment"
+            app:destination="@id/bankAccountFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/myProfileFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.MyProfileFragment"
+        android:label="fragment_my_profile"
+        tools:layout="@layout/fragment_my_profile" />
+    <fragment
+        android:id="@+id/productDetailFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.ProductDetailFragment"
+        android:label="fragment_product_detail"
+        tools:layout="@layout/fragment_product_detail" >
+        <action
+            android:id="@+id/action_productDetailFragment_to_cartFragment"
+            app:destination="@id/cartFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/paymentHistoryFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.PaymentHistoryFragment"
+        android:label="fragment_payment_history"
+        tools:layout="@layout/fragment_payment_history" />
+    <fragment
+        android:id="@+id/sharedCatalogFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.SharedCatalogFragment"
+        android:label="fragment_shared_catalog"
+        tools:layout="@layout/fragment_shared_catalog" >
+        <action
+            android:id="@+id/action_sharedCatalogFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/bankAccountFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.BankAccountFragment"
+        android:label="fragment_bank_account"
+        tools:layout="@layout/fragment_bank_account" />
+    <fragment
+        android:id="@+id/cartFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.CartFragment"
+        android:label="fragment_cart"
+        tools:layout="@layout/fragment_cart" >
+        <action
+            android:id="@+id/action_cartFragment_to_addMargingFragment"
+            app:destination="@id/addMargingFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/productListFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.ProductListFragment"
+        android:label="fragment_product_list"
+        tools:layout="@layout/fragment_product_list" >
+        <action
+            android:id="@+id/action_productListFragment_to_productDetailFragment"
+            app:destination="@id/productDetailFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addMargingFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.AddMargingFragment"
+        android:label="fragment_add_marging"
+        tools:layout="@layout/fragment_add_marging" >
+        <action
+            android:id="@+id/action_addMargingFragment_to_selectCustomerFragment"
+            app:destination="@id/selectCustomerFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/selectCustomerFragment"
+        android:name="com.ideologer.zamishoapp.ui.fragments.SelectCustomerFragment"
+        android:label="fragment_select_customer"
+        tools:layout="@layout/fragment_select_customer" />
+</navigation>

@@ -1,0 +1,132 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/colorAccent"
+    card_view:cardElevation="2dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:id="@+id/top_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp">
+
+        <ImageView
+            android:id="@+id/ivProduct"
+            android:layout_width="@dimen/product_item_cart_width"
+            android:layout_height="@dimen/product_item_cart_width"
+            android:layout_margin="10dp"
+            android:background="@drawable/product_image"
+            android:scaleType="fitXY"></ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="5dp"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@+id/ivProduct"
+            android:orientation="vertical">
+            <com.ideologer.zamishoapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="Long Printed frowk lawn"
+                android:textColor="@color/black_color"
+                android:textSize="14dp"
+                app:custom_font="Montserrat-Medium.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+            <com.ideologer.zamishoapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerVertical="true"
+                android:layout_marginLeft="5dp"
+                android:text="Rs 100"
+                android:textColor="@color/black_color"
+                android:textSize="14dp"
+                app:custom_font="Montserrat-SemiBold.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+            <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                android:id="@+id/tvSize"
+                android:layout_width="wrap_content"
+                android:layout_height="35dp"
+                android:layout_weight="1"
+                android:background="@color/colorAccent"
+                android:clickable="true"
+                android:drawableRight="@drawable/ic_action_down"
+                android:focusable="false"
+                android:hint="Select Size"
+                android:paddingLeft="10dp">
+
+            </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="5dp">
+
+                <com.ideologer.zamishoapp.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_marginLeft="5dp"
+                    android:text="Quantity"
+                    android:textColor="@color/black_color"
+                    android:textSize="14dp"
+                    app:custom_font="Montserrat-SemiBold.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_marginRight="10dp"
+                    android:orientation="horizontal">
+
+                    <com.ideologer.zamishoapp.utils.CustomTextView
+                        android:id="@+id/tv_plus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="5dp"
+                        android:background="@drawable/bg_home"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:text="+"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                    <com.ideologer.zamishoapp.utils.CustomTextView
+                        android:id="@+id/tv_count"
+                        android:layout_width="40dp"
+                        android:layout_height="wrap_content"
+                        android:background="@color/colorAccent"
+                        android:gravity="center"
+                        android:text="0"
+                        android:textColor="@color/black_color"
+                        android:textSize="18dp"
+                        app:custom_font="Montserrat-Bold.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+
+                    <com.ideologer.zamishoapp.utils.CustomTextView
+                        android:id="@+id/tv_minus"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/bg_home"
+                        android:paddingLeft="15dp"
+                        android:paddingTop="5dp"
+                        android:paddingRight="15dp"
+                        android:paddingBottom="5dp"
+                        android:text="-"
+                        android:textColor="@color/colorAccent"
+                        android:textSize="18dp"
+                        android:textStyle="bold"></com.ideologer.zamishoapp.utils.CustomTextView>
+                </LinearLayout>
+            </RelativeLayout>
+        </LinearLayout>
+
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

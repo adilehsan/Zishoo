@@ -1,0 +1,87 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@color/colorPrimary"
+    >
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:textStyle="bold"
+        android:textSize="22dp"
+        android:layout_marginTop="15dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:layout_gravity="center_horizontal"
+        android:text="@string/app_name"
+        >
+
+    </TextView>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:layout_marginLeft="30dp"
+        android:layout_marginBottom="60dp"
+
+        >
+        <de.hdodenhof.circleimageview.CircleImageView
+            xmlns:app="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/profile_image"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/bg_image"
+            app:civ_border_width="2dp"
+            app:civ_border_color="@color/colorAccent"/>
+       <LinearLayout
+           android:layout_width="wrap_content"
+           android:layout_toRightOf="@+id/profile_image"
+           android:layout_marginLeft="10dp"
+           android:layout_height="wrap_content"
+           android:orientation="vertical"
+           >
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textSize="14dp"
+               android:textColor="@color/colorAccent"
+               android:gravity="center_horizontal"
+               android:layout_marginTop="10dp"
+               android:layout_gravity="center_horizontal"
+               android:text="+923236899601"
+               >
+
+           </TextView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textSize="14dp"
+               android:textColor="@color/colorAccent"
+               android:gravity="center_horizontal"
+               android:layout_marginTop="10dp"
+               android:layout_gravity="center_horizontal"
+               android:text="Adil Ehsan"
+               >
+
+           </TextView>
+           <TextView
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:textStyle="bold"
+               android:textSize="14dp"
+               android:textColor="@color/colorPrimaryDark"
+               android:gravity="center_horizontal"
+               android:layout_marginTop="10dp"
+               android:layout_gravity="center_horizontal"
+               android:text="Edit Profile"
+               >
+
+           </TextView>
+       </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

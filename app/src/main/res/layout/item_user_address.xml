@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardBackgroundColor="@color/colorAccent"
+    card_view:cardElevation="4dp"
+    card_view:cardUseCompatPadding="true">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/layout_main">
+
+        <com.ideologer.zamishoapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginTop="10dp"
+            android:layout_marginRight="10dp"
+            android:text="Edit"
+            android:textColor="@color/colorPrimary"
+            android:textSize="14dp"
+            app:custom_font="Montserrat-Bold.otf">
+
+        </com.ideologer.zamishoapp.utils.CustomTextView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/ivCheck"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/ic_action_uncheck"
+                android:padding="5dp">
+
+            </ImageView>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="vertical">
+
+                <com.ideologer.zamishoapp.utils.CustomTextView
+                    android:id="@+id/tvName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Adil"
+                    android:textColor="@color/black_color"
+                    android:textSize="14dp"
+                    app:custom_font="Montserrat-Bold.otf">
+
+                </com.ideologer.zamishoapp.utils.CustomTextView>
+
+                <com.ideologer.zamishoapp.utils.CustomTextView
+                    android:id="@+id/tvPhoneNumber"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="4dp"
+                    android:text="032365789444"
+                    android:textColor="@color/black_color"
+                    android:textSize="14dp"
+                    app:custom_font="Montserrat-Medium.otf">
+
+                </com.ideologer.zamishoapp.utils.CustomTextView>
+
+                <com.ideologer.zamishoapp.utils.CustomTextView
+                    android:id="@+id/tvAddress"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="house # 162 , street 5 , block H,Joher Town"
+                    android:textColor="@color/black_color"
+                    android:textSize="14dp"
+                    app:custom_font="Montserrat-Regular.otf">
+
+                </com.ideologer.zamishoapp.utils.CustomTextView>
+
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+</androidx.cardview.widget.CardView>

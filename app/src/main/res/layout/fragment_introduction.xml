@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg_home"
+    tools:context=".ui.fragments.IntroductionFragment">
+
+    <com.ideologer.zamishoapp.utils.CustomTextView
+        android:id="@+id/top_text"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:custom_font="Montserrat-Bold.otf"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="20dp"
+        android:textColor="@color/colorAccent"
+        android:gravity="center_horizontal"
+        android:text="Earn from Home \n with out Any Investment"
+        android:textSize="20dp"
+
+        android:textStyle="bold">
+
+    </com.ideologer.zamishoapp.utils.CustomTextView>
+
+    <com.asksira.loopingviewpager.LoopingViewPager
+        android:id="@+id/viewPager"
+        android:layout_width="250dp"
+        android:layout_height="250dp"
+        android:padding="6dp"
+        android:layout_centerInParent="true"
+        app:autoScroll="true"
+        app:isInfinite="true"
+        app:scrollInterval="2000"
+        app:wrap_content="true" />
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginBottom="20dp">
+
+        <com.rd.PageIndicatorView
+            android:id="@+id/indicator"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerHorizontal="true"
+            android:layout_marginBottom="15dp"
+            app:piv_animationDuration="200"
+            app:piv_animationType="slide"
+            app:piv_interactiveAnimation="true"
+            app:piv_radius="6dp"
+            app:piv_selectedColor="@color/colorPrimaryDark"
+            app:piv_unselectedColor="@color/colorAccent" />
+
+        <com.ideologer.zamishoapp.utils.CustomTextView
+            android:id="@+id/btnFreeSignup"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/indicator"
+            android:layout_marginTop="10dp"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:text="Sign Up for Free"
+            app:custom_font="Montserrat-Black.otf"
+            android:textColor="@color/colorAccent"
+            android:textSize="18sp">
+
+        </com.ideologer.zamishoapp.utils.CustomTextView>
+    </RelativeLayout>
+
+
+</RelativeLayout>

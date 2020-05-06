@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    tools:context=".ui.fragments.MyProfileFragment">
+    <com.ideologer.zamishoapp.utils.CustomTextView
+        android:id="@+id/tvSkip"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginTop="5dp"
+        android:layout_marginRight="20dp"
+        android:gravity="center"
+        android:paddingLeft="15dp"
+        android:paddingTop="10dp"
+        android:paddingRight="15dp"
+        android:paddingBottom="10dp"
+        app:custom_font="MontserratAlternates-ExtraBoldItalic.otf"
+        android:text="Skip"
+        android:textColor="@color/colorPrimary"
+        android:textSize="14dp" />
+    <androidx.core.widget.NestedScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="15dp"
+                android:layout_marginRight="15dp"
+                android:orientation="vertical">
+
+
+
+                <EditText
+                    android:id="@+id/etUserName"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="25dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="Enter your name"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/curser_color">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etUserEmail"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="Enter your email"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/curser_color">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etUserAddress"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="Enter your address"
+                    android:maxLines="2"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/curser_color">
+
+                </EditText>
+
+                <EditText
+                    android:id="@+id/etPostalCode"
+                    android:layout_width="match_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginTop="15dp"
+                    android:backgroundTint="@color/colorPrimary"
+                    android:hint="Enter your postal code"
+                    android:maxLines="1"
+                    android:paddingLeft="10dp"
+                    android:textCursorDrawable="@drawable/curser_color">
+
+                </EditText>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/etUserGender"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawableRight="@drawable/ic_action_down"
+                        android:focusable="false"
+                        android:hint="Select Gender"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp">
+
+                    </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+                    <EditText
+                        android:id="@+id/etUserDOB"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:layout_weight="1"
+                        android:hint="Date Of Birth"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp">
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:orientation="horizontal"
+                    android:weightSum="2">
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/etUserCity"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_weight="1"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:drawableRight="@drawable/ic_action_down"
+                        android:hint="Select city"
+                        android:paddingLeft="10dp"
+                        android:paddingRight="10dp">
+
+                    </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+
+                    <androidx.appcompat.widget.AppCompatAutoCompleteTextView
+                        android:id="@+id/etUserProvince"
+                        android:layout_width="match_parent"
+                        android:layout_height="40dp"
+                        android:layout_marginLeft="10dp"
+                        android:backgroundTint="@color/colorPrimary"
+                        android:layout_weight="1"
+                        android:clickable="true"
+                        android:focusable="false"
+                        android:hint="Select Province"
+                        android:maxLines="1"
+                        android:paddingLeft="10dp">
+
+                    </androidx.appcompat.widget.AppCompatAutoCompleteTextView>
+                </LinearLayout>
+
+
+            </LinearLayout>
+
+        </LinearLayout>
+    </androidx.core.widget.NestedScrollView>
+
+    <Button
+        android:id="@+id/btnUpdate"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/bg_home"
+        android:paddingLeft="50dp"
+        android:paddingTop="10dp"
+        android:paddingRight="50dp"
+        android:paddingBottom="10dp"
+        android:text="@string/next"
+        android:textColor="@color/colorAccent"
+        android:textSize="14sp">
+
+    </Button>
+</RelativeLayout>

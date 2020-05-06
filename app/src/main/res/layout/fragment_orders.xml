@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/colorAccent"
+    tools:context=".ui.fragments.OrdersFragment">
+<TextView
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:id="@+id/tvEmpty"
+    android:layout_centerInParent="true"
+    android:gravity="center"
+    android:textColor="@color/colorPrimary"
+    android:text="You did not have any order yet start give orders and earn">
+
+</TextView>
+ <androidx.recyclerview.widget.RecyclerView
+     android:layout_width="match_parent"
+     android:layout_height="match_parent"
+     android:id="@+id/rvOrders"
+     >
+
+ </androidx.recyclerview.widget.RecyclerView>
+
+</RelativeLayout>

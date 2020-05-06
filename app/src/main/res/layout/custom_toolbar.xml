@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.Toolbar xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    style="@style/ToolBarStyle"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="?attr/colorPrimary"
+    android:minHeight="?attr/actionBarSize"
+    app:contentInsetEnd="10dp"
+    app:contentInsetStart="10dp"
+    tools:ignore="RtlHardcoded">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <ImageView
+            android:id="@+id/iVCart"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_marginRight="15dp"
+            android:background="@drawable/ic_action_cart">
+
+        </ImageView>
+        <com.ideologer.zamishoapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:id="@+id/tvBarHeading"
+            app:custom_font="Montserrat-SemiBoldItalic.otf"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@+id/iVBack"
+            android:layout_marginLeft="15dp"
+            android:textColor="@color/colorAccent"
+            android:textSize="16dp"
+            android:text=""
+            >
+
+        </com.ideologer.zamishoapp.utils.CustomTextView>
+
+        <ImageView
+            android:id="@+id/iVBack"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:visibility="gone"
+            android:background="@drawable/ic_action_back">
+
+        </ImageView>
+
+        <ImageView
+            android:id="@+id/iVSearch"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="20dp"
+            android:layout_toLeftOf="@+id/iVCart"
+            android:background="@drawable/ic_action_search">
+
+        </ImageView>
+    </RelativeLayout>
+</androidx.appcompat.widget.Toolbar>

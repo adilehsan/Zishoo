@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "74267457894",
+    "firebase_url": "https://zamisho-app.firebaseio.com",
+    "project_id": "zamisho-app",
+    "storage_bucket": "zamisho-app.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:74267457894:android:653b3b4fe13d7bf27eb0a7",
+        "android_client_info": {
+          "package_name": "com.ideologer.zamishoapp"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "74267457894-8ij2ptdo5hccs1s68f581n9chgqr2jvd.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.ideologer.zamishoapp",
+            "certificate_hash": "03c0b037e6daf5dff528a2387f82b08671b52af8"
+          }
+        },
+        {
+          "client_id": "74267457894-7kg3c15snf5uprrjb2295a761gsuphrp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAUgzFUaZLH9LVbNwOgPWGbieNzVFhKp_g"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "74267457894-7kg3c15snf5uprrjb2295a761gsuphrp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

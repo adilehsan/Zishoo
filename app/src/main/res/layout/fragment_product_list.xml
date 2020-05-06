@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.ProductListFragment">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/my_appbar_container"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorAccent">
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            app:layout_scrollFlags="scroll|enterAlways|enterAlwaysCollapsed"
+            card_view:cardBackgroundColor="@color/colorAccent"
+            card_view:cardCornerRadius="6dp"
+            card_view:cardElevation="4dp"
+            card_view:cardUseCompatPadding="true">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical">
+
+                <com.ideologer.zamishoapp.utils.CustomTextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:background="@color/light_grey"
+                    android:padding="10dp"
+                    android:text="Product Detail"
+                    android:drawableRight="@drawable/ic_action_copy"
+                    android:textColor="@color/black_color"
+                    android:textSize="14dp"
+                    android:textStyle="bold"
+                    app:custom_font="Montserrat-Medium.otf">
+
+                </com.ideologer.zamishoapp.utils.CustomTextView>
+
+                <com.ideologer.zamishoapp.utils.CustomTextView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:layout_marginTop="10dp"
+                    android:text="Fabric:
+Embroidered Jacquard Shirt Front 4 panels
+Printed Jacquard Shirt Back 1.14 Mtr
+Printed Jacquard Shirt Sleeves 25''
+Yarn Dyed Fancy Check Dupatta 2.54 Mtr
+Dyed Cambric Trouser 2.50 Mtr
+Printed Raw Silk Trim For Shirt 1 pc
+Embroidered Trouser Motifs 2 pc
+Embroidered Hem Patti 1.50 Mtr
+
+Piece:
+3 Piece
+
+Color:
+YELLOW"
+                    android:textColor="@color/black_color"
+                    android:textSize="14dp"
+                    app:custom_font="Montserrat-Regular.otf"></com.ideologer.zamishoapp.utils.CustomTextView>
+            </LinearLayout>
+        </androidx.cardview.widget.CardView>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/rvProductsList"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="5dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        android:layout_marginBottom="50dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior">
+
+    </androidx.recyclerview.widget.RecyclerView>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="@color/transparent_white"
+        android:orientation="horizontal"
+        android:weightSum="3.5">
+
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="5dp"
+            android:layout_weight="1.5"
+            android:background="@drawable/whats_app_bg"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="10dp"
+
+                android:layout_marginRight="10dp"
+                android:layout_marginBottom="10dp"
+                android:background="@drawable/ic_action_whatsapp_white">
+
+            </ImageView>
+
+            <com.ideologer.zamishoapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:text="Share On Whats App"
+                android:textColor="@color/colorAccent"
+                android:textSize="12dp"
+                app:custom_font="Montserrat-SemiBold.otf">
+
+            </com.ideologer.zamishoapp.utils.CustomTextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_action_share_black">
+
+            </ImageView>
+
+            <com.ideologer.zamishoapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="Others"
+                android:textColor="@color/black_color"
+                android:textSize="12dp"
+                app:custom_font="Montserrat-Medium.otf">
+
+            </com.ideologer.zamishoapp.utils.CustomTextView>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical">
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="8dp"
+                android:background="@drawable/ic_action_download">
+
+            </ImageView>
+
+            <com.ideologer.zamishoapp.utils.CustomTextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="4dp"
+                android:text="Instagram"
+                android:textColor="@color/black_color"
+                android:textSize="12dp"
+                app:custom_font="Montserrat-Medium.otf">
+
+            </com.ideologer.zamishoapp.utils.CustomTextView>
+        </LinearLayout>
+    </LinearLayout>
+</androidx.coordinatorlayout.widget.CoordinatorLayout>

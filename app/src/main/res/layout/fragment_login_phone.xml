@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@color/colorAccent"
+    android:orientation="vertical"
+    tools:context=".ui.fragments.LoginPhoneFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="60dp"
+        android:layout_marginRight="20dp"
+        android:orientation="vertical">
+
+        <com.ideologer.zamishoapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:text="Enter Phone Number"
+            app:custom_font="Montserrat-Bold.otf"
+            android:textColor="@color/black_color"
+            android:textSize="14dp"
+             />
+
+        <com.ideologer.zamishoapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            app:custom_font="Montserrat-Regular.otf"
+            android:text="We will send you otp on your phone number to authenticate your account"
+            android:textColor="@color/black_color"
+            android:textSize="12dp" />
+
+        <com.ideologer.zamishoapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="60dp"
+            android:gravity="center"
+            android:text="Phone Number"
+            app:custom_font="Montserrat-SemiBold.otf"
+            android:textColor="@color/black_color"
+            android:textSize="12dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="50dp"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal">
+
+            <EditText
+                android:id="@+id/etNumber"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginLeft="15dp"
+                android:backgroundTint="@color/colorPrimary"
+                android:textCursorDrawable="@drawable/curser_color"
+                android:gravity="center_horizontal|center_vertical"
+                android:hint="03xxxxxxxxx"
+                android:inputType="number"
+                android:maxLength="11"
+                android:maxLines="1"
+                android:textColor="@color/black_color">
+
+            </EditText>
+        </LinearLayout>
+
+
+        <com.ideologer.zamishoapp.utils.CustomTextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_horizontal"
+            android:layout_marginTop="30dp"
+            android:gravity="center"
+            app:custom_font="Montserrat-Light.otf"
+            android:text="We will send you otp on your phone number to authenticate your account"
+            android:textColor="@color/black_color"
+            android:textSize="12dp" />
+
+        <Button
+            android:id="@+id/btnLogin"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="40dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/rounded_btn"
+            android:paddingLeft="50dp"
+            android:paddingTop="10dp"
+            android:paddingRight="50dp"
+            android:paddingBottom="10dp"
+            android:text="Next"
+            android:textColor="@color/colorAccent"
+            android:textSize="14sp"></Button>
+    </LinearLayout>
+
+</LinearLayout>
